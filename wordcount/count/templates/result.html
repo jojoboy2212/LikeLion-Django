@@ -1,0 +1,23 @@
+<html>
+<head>
+
+</head>
+
+<body>
+<h1>입력받은 텍스트는 {{wordlen}} 단어 입니다.</h1>
+<h2>압력받은 텍스트 <br> "{{text}}"</h2>
+<div style="width:500px; height:200px;
+border:tomato solid 2px;">
+    <h2>{{text}}</h2>
+</div>
+<h2>단어카운트</h2>
+
+
+<h3>
+{% for word, counttotal in wordcount %}
+{{word}} : {{counttotal}}
+<br>
+{%endfor%}</h3>
+<a href="{% url 'home' %}">다시하기</a>
+</body>
+</html>
